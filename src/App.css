@@ -1,82 +1,95 @@
+/* Base styles for the entire page */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #1e1b2f;
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0; /* Remove default browser margin */
+  padding: 0; /* Remove default browser padding */
+  background-color: #1e1b2f; /* Dark purple background for the whole page */
+  color: #ffffff; /* Default text color set to white */
+  font-family: 'Segoe UI', sans-serif; /* Use Segoe UI font for clean, modern look */
 }
 
+/* Container for the main app content */
 .app {
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
+  max-width: 700px; /* Limit content width for readability */
+  margin: auto; /* Center the container horizontally */
+  padding: 2rem; /* Add space around the content */
 }
 
+/* Main page heading */
 h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  text-align: center; /* Center the heading text */
+  font-size: 2rem; /* Large, readable heading size */
+  margin-bottom: 1.5rem; /* Space below heading */
 }
 
+/* Textarea for user input or log display */
 textarea {
-  width: 100%;
-  padding: 1rem;
-  font-family: monospace;
-  background-color: #2c2640;
-  color: #d0d0ff;
-  border: 1px solid #555;
-  border-radius: 4px;
-  resize: vertical;
-  margin-bottom: 1rem;
+  width: 100%; /* Fill available horizontal space */
+  padding: 1rem; /* Inner padding for text readability */
+  font-family: monospace; /* Monospaced font for log readability */
+  background-color: #2c2640; /* Slightly lighter dark background */
+  color: #d0d0ff; /* Light bluish text color */
+  border: 1px solid #555; /* Subtle border for definition */
+  border-radius: 4px; /* Rounded corners for smoother look */
+  resize: vertical; /* Allow vertical resizing only */
+  margin-bottom: 1rem; /* Space below the textarea */
 }
 
+/* Button styling */
 button {
-  width: 100%;
-  padding: 0.8rem;
-  background-color: #3b82f6;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-bottom: 2rem;
+  width: 100%; /* Full width for easy clicking */
+  padding: 0.8rem; /* Inner padding for touch comfort */
+  background-color: #3b82f6; /* Blue background for call-to-action */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded edges for a modern look */
+  font-size: 1rem; /* Readable text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 2rem; /* Space below button */
 }
 
+/* Button hover state */
 button:hover {
-  background-color: #2563eb;
+  background-color: #2563eb; /* Darker blue for hover feedback */
 }
 
+/* Section containers for grouping content */
 .section {
-  background-color: #2c2640;
-  border: 1px solid #444;
-  padding: 1rem;
-  border-radius: 4px;
-  margin-bottom: 1.5rem;
+  background-color: #2c2640; /* Dark background to match textarea */
+  border: 1px solid #444; /* Subtle border for separation */
+  padding: 1rem; /* Inner spacing */
+  border-radius: 4px; /* Rounded edges */
+  margin-bottom: 1.5rem; /* Space between sections */
 }
 
+/* Section headings */
 .section h2 {
-  margin-top: 0;
-  color: #90cdf4;
+  margin-top: 0; /* Remove default margin on top */
+  color: #90cdf4; /* Light blue color for headings */
 }
 
+/* Base style for severity tags (status labels) */
 .severity {
-  padding: 0.2rem 0.5rem;
-  border-radius: 3px;
-  color: white;
+  padding: 0.2rem 0.5rem; /* Inner padding for label shape */
+  border-radius: 3px; /* Rounded corners */
+  color: white; /* White text for contrast */
 }
 
+/* Severity color coding: error level */
 .severity.error {
-  background-color: #dc2626;
+  background-color: #dc2626; /* Red background for errors */
 }
 
+/* Severity color coding: warning level */
 .severity.warning {
-  background-color: #f59e0b;
+  background-color: #f59e0b; /* Amber background for warnings */
 }
 
+/* Severity color coding: info level */
 .severity.info {
-  background-color: #3b82f6;
+  background-color: #3b82f6; /* Blue background for informational messages */
 }
 
+/* Action indicator: left border highlight */
 .action {
-  border-left: 5px solid #10b981;
+  border-left: 5px solid #10b981; /* Green left border to indicate actions */
 }
